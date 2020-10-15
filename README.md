@@ -11,7 +11,7 @@ _Note: It is assumed that you are running all the below commands from the main/r
 Clone this branch of the git repository 
 
 ```
-git clone --single-branch --branch main https://github.com/Sage-Bionetworks/schematic.git
+git clone --single-branch --branch main https://github.com/ncihtan/schematic.git
 ```
 
 Navigate into the `schematic` directory and run the command as below:
