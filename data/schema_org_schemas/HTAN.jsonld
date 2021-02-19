@@ -5741,6 +5741,9 @@
                     "@id": "bts:ScATACseqRead2"
                 },
                 {
+                    "@id": "bts:ScATACseqRead3"
+                },
+                {
                     "@id": "bts:LibraryConstructionMethod"
                 },
                 {
@@ -7615,6 +7618,15 @@
                 },
                 {
                     "@id": "bts:SampleIndexandDNAInsert"
+                },
+                {
+                    "@id": "bts:DNAInsert"
+                },
+                {
+                    "@id": "bts:SampleIndex"
+                },
+                {
+                    "@id": "bts:CellBarcode"
                 }
             ],
             "sms:displayName": "scATACseq Read1",
@@ -7640,10 +7652,53 @@
                 },
                 {
                     "@id": "bts:SampleIndexandDNAInsert"
+                },
+                {
+                    "@id": "bts:DNAInsert"
+                },
+                {
+                    "@id": "bts:SampleIndex"
+                },
+                {
+                    "@id": "bts:CellBarcode"
                 }
             ],
             "sms:displayName": "scATACseq Read2",
             "sms:required": "sms:true",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:ScATACseqRead3",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "Read 3 content description",
+            "rdfs:label": "ScATACseqRead3",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:ScATAC-seqLevel1"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "schema:rangeIncludes": [
+                {
+                    "@id": "bts:CellBarcodeandDNAInsert"
+                },
+                {
+                    "@id": "bts:SampleIndexandDNAInsert"
+                },
+                {
+                    "@id": "bts:DNAInsert"
+                },
+                {
+                    "@id": "bts:SampleIndex"
+                },
+                {
+                    "@id": "bts:CellBarcode"
+                }
+            ],
+            "sms:displayName": "scATACseq Read3",
+            "sms:required": "sms:false",
             "sms:validationRules": []
         },
         {
@@ -29704,6 +29759,9 @@
                     "@id": "bts:InfiltratingbasalcellcarcinomaNOS"
                 },
                 {
+                    "@id": "bts:InfiltratingductcarcinomaNOS"
+                },
+                {
                     "@id": "bts:Infiltratingductandcolloidcarcinoma"
                 },
                 {
@@ -41155,6 +41213,40 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Sample Index and DNA Insert",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:DNAInsert",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "DNAInsert",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:ScATACseqRead1"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "DNA Insert",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:SampleIndex",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "SampleIndex",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:ScATACseqRead1"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Sample Index",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
@@ -99397,6 +99489,23 @@
                 "@id": "http://schema.biothings.io"
             },
             "sms:displayName": "Infiltrating basal cell carcinoma NOS",
+            "sms:required": "sms:false",
+            "sms:validationRules": []
+        },
+        {
+            "@id": "bts:InfiltratingductcarcinomaNOS",
+            "@type": "rdfs:Class",
+            "rdfs:comment": "TBD",
+            "rdfs:label": "InfiltratingductcarcinomaNOS",
+            "rdfs:subClassOf": [
+                {
+                    "@id": "bts:PrimaryDiagnosis"
+                }
+            ],
+            "schema:isPartOf": {
+                "@id": "http://schema.biothings.io"
+            },
+            "sms:displayName": "Infiltrating duct carcinoma NOS",
             "sms:required": "sms:false",
             "sms:validationRules": []
         },
