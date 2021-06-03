@@ -3,13 +3,21 @@
 
 ## Introduction
 
-SCHEMATIC is an acronym for _Schema Engine for Manifest Ingress and Curation_. The Python based infrastructure provides a _novel_ schema-based, data ingress ecosystem, that is meant to streamline the process of dataset annotation, metadata validation and submission to an asset store for various data contributors.
+SCHEMATIC is an acronym for _Schema Engine for Manifest Ingress and Curation_. The Python based infrastructure provides a _novel_ schema-based, data ingress ecosystem, that is meant to streamline the process of dataset annotation, metadata validation and submission to an asset store (e.g., [Synapse](https://www.synapse.org/)) for various data contributors.
 
 ## Installation Requirements and Pre-requisites
 
 * Python 3.7.1 or higher
 
 Note: You need to be a registered and certified user on [`synapse.org`](https://www.synapse.org/), and also have the right permissions to download the Google credentials files from Synapse.
+
+* Clone of the [ncihtan/data-models](https://github.com/ncihtan/data-models) repository
+
+```
+git clone https://github.com/ncihtan/data-models.git
+```
+
+Configure the [config.yml](https://github.com/ncihtan/data-models/blob/main-add-files/config.yml) file in the `data-models` directory appropriately. All paths in `config.yml` are specified relative to the `config.yml` file.
 
 ## Installing
 
