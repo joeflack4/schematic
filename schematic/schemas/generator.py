@@ -1,7 +1,7 @@
 import os
 import json
 import networkx as nx
-from orderedset import OrderedSet
+from ordered_set import OrderedSet
 
 from typing import Any, Dict, Optional, Text, List
 
